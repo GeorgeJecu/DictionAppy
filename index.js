@@ -28,10 +28,10 @@ async function searchDefinition(){
         for(let i = 0; i <= wordPage.length; i++){
             for(audio of wordPage[i].phonetics){
                 if (audio.audio){
-                    document.querySelector(".audioIcon").setAttribute("src", "/images/audioOn.svg");
+                    document.querySelector(".audioIcon").setAttribute("src", "../DictionAppy/images/audioOn.svg");
                     document.querySelector("#audio").setAttribute("src", audio.audio);
                 }else{
-                    document.querySelector(".audioIcon").setAttribute("src", "/images/audioOff.svg");
+                    document.querySelector(".audioIcon").setAttribute("src", "../DictionAppy/images/audioOff.svg");
                     document.querySelector("#audio").setAttribute("src", "");
                 }
             }
