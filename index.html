@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/titleImg.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>DictionAppy</title>
+</head>
+<body>
+    <h1>DictionAppy</h1>
+    <section class="wordInput">
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Type your word here..." aria-label="Type your word here..." aria-describedby="button-addon2" onclick="errorClear()">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="searchDefinition()">
+                <img src="/images/searchIcon.svg" alt="">
+            </button>
+        </div>
+    
+        <div class="image-group">
+            <img src="/images/firstPage.svg" alt="">
+        </div>    
+
+    </section>
+
+    <section class="wordDisplay hidden">
+
+        <div class="wordHeading">
+            <h3 class="title">word</h3>
+            <h3 class="phonetic">(phonetics)</h3>
+            <audio id="audio" src="https://api.dictionaryapi.dev/media/pronunciations/en/snow-1-uk.mp3">
+            </audio>
+            <button>
+                <img class="audioIcon" src="" alt="" onclick="playAudio()">
+            </button>
+        </div>
+
+        <div class="wordMeaning">
+
+        </div>
+
+        <div class="image-group">
+            <img src="/images/secondPage.svg" alt="">
+        </div>    
+        
+    </section>
+
+    <section class="errorDisplay hidden">
+        <div class="errorMessage">
+            <h2>error here</h2>
+            <h3>error message here</h3>
+
+        </div>
+
+        <div class="image-group">
+            <img src="/images/error.svg" alt="">
+        </div>    
+
+
+    </section>
+
+    
+</body>
+</html>

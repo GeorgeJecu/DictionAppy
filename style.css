@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+h3{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.input-group{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-family: 'Philosopher', sans-serif;
+}
+
+#button-addon2 > img{
+    max-width: 2rem;
+}
+
+.wordDisplay{
+    margin-left: 2rem;
+}
+
+.image-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wordHeading{
+    display: flex;
+}
+
+.wordHeading button{
+    background-color: transparent;
+    border: none;
+    margin-top: -0.4rem;
+}
+
+.wordMeaning p{
+    margin-left: 3rem;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.wordMeaning h5{
+    margin-left: 1rem;
+    font-family: 'Philosopher', sans-serif;
+
+}
+
+.errorMessage h2, .errorMessage h3{
+    color: #f50057;
+    text-align: center;
+}
+
+.error{
+    color: #f50057 !important;
+    border: 1px solid #f50057 !important;
+}
+
+.hidden{
+    display: none !important;
+}
