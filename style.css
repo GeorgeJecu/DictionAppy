@@ -34,6 +34,10 @@ h3{
     justify-content: center;
 }
 
+.image-group img{
+    overflow: hidden;
+}
+
 .wordHeading{
     display: flex;
 }
